@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color:rgba(84, 58, 183, 1);
+    overflow: hidden;
 }
 
 .vignette {
