@@ -1,5 +1,5 @@
 <template>
-  <section id="about">
+  <section id="guide">
     <main>
       <v-container>
         <v-row>
@@ -17,8 +17,8 @@
                       src="/src/assets/img/usage.png"
                       alt="Banner"
                       class="img-zoom"
-                      height="120px"
-                      width="120px"
+                      height="180px"
+                      width="180px"
                       style="
                         filter: drop-shadow(0 0 2px #00ccff) brightness(0)
                           saturate(50%) invert(1) sepia(1) hue-rotate(180deg);

@@ -6,10 +6,18 @@
           class="inner-header d-flex flex-column justify-center align-center"
         >
           <div
-            v-if="variant === 'download'"
+            v-if="variant !== 'home'"
             class="title d-flex flex-column justify-end align-center"
           >
-            <h1 class="text-h2 animated fadeInDown">Download</h1>
+            <Transition name="slide-text" mode="out-in">
+              <h1
+                :key="variantText"
+                class="text-h2"
+                :class="{ 'animated fadeInDown': shouldFadeInDown }"
+              >
+                {{ variantText }}
+              </h1>
+            </Transition>
             <h1 class="text-h2 moveChonkyStation">ChonkyStation3</h1>
           </div>
           <div v-else class="title d-flex flex-column justify-end align-center">
@@ -137,6 +145,28 @@
   }
 }
 
+@keyframes fadeOutLRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .moveChonkyStation {
   animation-name: moveChonkyStation;
   animation-duration: 1s;
@@ -171,6 +201,14 @@
   height: 10vh;
 }
 
+.slide-text-enter-active {
+  animation: fadeInLeft 0.25s ease-out;
+}
+
+.slide-text-leave-active {
+  animation: fadeOutRight 0.25s ease-in;
+}
+
 @media screen and (max-width: 850px) {
   .text-h2 {
     font-size: 3.45rem !important;
@@ -184,6 +222,29 @@ export default {
     variant: {
       type: String,
       default: "home",
+    },
+  },
+  data() {
+    return {
+      shouldFadeInDown: false,
+    };
+  },
+  computed: {
+    variantText() {
+      switch (this.variant) {
+        case "download":
+          return "Download";
+        case "quickstart":
+          return "Get Started";
+        case "support":
+          return "Support";
+      }
+    },
+  },
+  watch: {
+    variant(newVariant, oldVariant) {
+      // Apply fadeInDown only when coming from home page
+      this.shouldFadeInDown = oldVariant === "home" && newVariant !== "home";
     },
   },
 };

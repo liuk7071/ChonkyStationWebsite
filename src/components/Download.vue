@@ -1,5 +1,5 @@
 <template>
-  <section id="download">
+  <section id="builds">
     <main>
       <div class="d-flex flex-column justify-end align-center">
         <h1

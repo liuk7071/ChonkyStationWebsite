@@ -21,6 +21,8 @@ export default {
     bannerVariant() {
       const route = this.$route;
       if (route.name === "download") return "download";
+      if (route.name === "support") return "support";
+      if (route.name === "get-started") return "quickstart";
       return "home";
     },
   },

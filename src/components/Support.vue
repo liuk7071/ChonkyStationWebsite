@@ -1,5 +1,5 @@
 <template>
-  <section id="support">
+  <section id="links">
     <main>
       <v-container>
         <v-row>
