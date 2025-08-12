@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  color: white !important;
+}
+a {
+  color: white;
+}
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgb(0, 138, 156) 100%
+  );
+  color: white;
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+:is(p, span).ff-body {
+  font-family: "Quicksand", sans-serif !important;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+}
+.content p {
+  color: rgb(169, 174, 240);
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.5) inset;
+  z-index: 0;
+}
+
+.github > a {
+  z-index: 100;
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-zoom {
+  transition: transform 0.2s;
+}
+.img-zoom:hover {
+  transform: scale(1.05);
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.1em;
+}

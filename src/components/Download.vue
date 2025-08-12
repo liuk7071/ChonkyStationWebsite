@@ -1,0 +1,70 @@
+<template>
+  <section id="download">
+    <main>
+      <div class="d-flex flex-column justify-end align-center">
+        <h1
+          class="text-h2 animated"
+          style="transform: translate3d(0, -15vh, 0); margin-bottom: 10vh"
+        >
+          Latest development builds
+        </h1>
+        <p style="transform: translate3d(0, -20vh, 0)">
+          No stable releases are available at the moment.
+        </p>
+      </div>
+      <v-container>
+        <v-row>
+          <v-col cols="12" sm="4">
+            <v-card
+              title="Windows"
+              prepend-icon="mdi-microsoft-windows"
+              text=""
+              variant="tonal"
+            >
+              <v-card-actions>
+                <v-btn
+                  href="https://nightly.link/liuk7071/ChonkyStation/workflows/windows_build/rewrite/Windows%20Executable.zip"
+                  >Download</v-btn
+                >
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" sm="4">
+            <v-card
+              title="macOS"
+              prepend-icon="mdi-apple"
+              text=""
+              variant="tonal"
+            >
+              <v-card-actions>
+                <v-btn
+                  href="https://nightly.link/liuk7071/ChonkyStation/workflows/macos_build/rewrite/MacOS%20App%20Bundle.zip"
+                  >Download</v-btn
+                >
+              </v-card-actions>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" sm="4">
+            <v-card
+              title="Linux"
+              prepend-icon="mdi-linux"
+              text=""
+              variant="tonal"
+            >
+              <v-card-actions>
+                <v-btn
+                  href="https://nightly.link/liuk7071/ChonkyStation/workflows/linux_build/rewrite/Linux%20Executable.zip"
+                  >Download</v-btn
+                >
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </main>
+  </section>
+</template>
+
+<style scoped></style>
