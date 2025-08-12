@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import DownloadView from "../views/DownloadView.vue";
 import GetStartedView from "../views/GetStartedView.vue";
+import SupportView from "../views/SupportView.vue";
 
 const router = createRouter({
   history: createWebHistory("/"),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: "/download",
       name: "download",
       component: DownloadView,
+    },
+    {
+      path: "/support",
+      name: "support",
+      component: SupportView,
     },
   ],
 });
