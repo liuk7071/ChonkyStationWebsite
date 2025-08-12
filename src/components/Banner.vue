@@ -170,6 +170,12 @@
 .title {
   height: 10vh;
 }
+
+@media screen and (max-width: 850px) {
+  .text-h2 {
+    font-size: 3.45rem !important;
+  }
+}
 </style>
 
 <script>
