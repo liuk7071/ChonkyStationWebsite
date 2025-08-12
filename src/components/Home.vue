@@ -42,7 +42,7 @@
         </v-col>
         <v-col cols="12">
           <div class="d-flex justify-center">
-            <a class="" href="https://discord.gg/YU2yjP5jvS">
+            <a class="img-zoom" href="https://discord.gg/YU2yjP5jvS">
               <img
                 src="https://discord.com/api/guilds/1351277918726262954/widget.png?style=banner2"
               />

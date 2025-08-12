@@ -23,7 +23,7 @@
             >
               <v-card-actions>
                 <v-btn
-                  href="https://nightly.link/liuk7071/ChonkyStation/workflows/windows_build/rewrite/Windows%20Executable.zip"
+                  href="https://nightly.link/liuk7071/ChonkyStation3/workflows/windows/master/ChonkyStation3.zip"
                   >Download</v-btn
                 >
               </v-card-actions>
@@ -39,7 +39,7 @@
             >
               <v-card-actions>
                 <v-btn
-                  href="https://nightly.link/liuk7071/ChonkyStation/workflows/macos_build/rewrite/MacOS%20App%20Bundle.zip"
+                  href="https://nightly.link/liuk7071/ChonkyStation3/workflows/macos/master/ChonkyStation3.zip"
                   >Download</v-btn
                 >
               </v-card-actions>
@@ -55,7 +55,7 @@
             >
               <v-card-actions>
                 <v-btn
-                  href="https://nightly.link/liuk7071/ChonkyStation/workflows/linux_build/rewrite/Linux%20Executable.zip"
+                  href="https://nightly.link/liuk7071/ChonkyStation3/workflows/linux/master/ChonkyStation3.zip"
                   >Download</v-btn
                 >
               </v-card-actions>

@@ -79,7 +79,7 @@
         class="content d-flex justify-center align-center"
       >
         <p class="animated fadeInUp platformText">
-          for Windows, Mac, Linux and Android.
+          for Windows, Mac and Linux.
         </p>
       </div>
     </main>
