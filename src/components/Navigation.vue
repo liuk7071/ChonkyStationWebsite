@@ -29,6 +29,20 @@
             <span class="mr-2 button">Download</span>
           </VBtn>
         </RouterLink>
+        <RouterLink :to="{ name: 'support' }">
+          <VBtn text>
+            <span class="mr-2 button">Support</span>
+          </VBtn>
+        </RouterLink>
+      </div>
+      <VSpacer v-if="!isMobile" />
+      <div v-if="!isMobile" class="social-icons">
+        <VBtn icon href="https://youtube.com/@ChonkyStation3" target="_blank">
+          <i class="fab fa-youtube fa-lg"></i>
+        </VBtn>
+        <VBtn icon href="https://discord.gg/YU2yjP5jvS" target="_blank">
+          <i class="fab fa-discord fa-lg"></i>
+        </VBtn>
       </div>
     </VAppBar>
     <VNavigationDrawer
@@ -55,7 +69,31 @@
             <VListItemTitle>Download</VListItemTitle>
           </RouterLink>
         </VListItem>
+        <VListItem>
+          <RouterLink :to="{ name: 'support' }" @click="drawer = false">
+            <VListItemTitle>Support</VListItemTitle>
+          </RouterLink>
+        </VListItem>
       </VList>
+      <!-- Social icons at bottom of mobile drawer -->
+      <div class="mobile-social-icons">
+        <VBtn
+          icon
+          href="https://youtube.com/@ChonkyStation3"
+          target="_blank"
+          size="large"
+        >
+          <i class="fab fa-youtube fa-2x" style="color: #ff0000"></i>
+        </VBtn>
+        <VBtn
+          icon
+          href="https://discord.gg/YU2yjP5jvS"
+          target="_blank"
+          size="large"
+        >
+          <i class="fab fa-discord fa-2x" style="color: #5865f2"></i>
+        </VBtn>
+      </div>
     </VNavigationDrawer>
   </div>
 </template>
@@ -81,6 +119,25 @@
 
 .bg-secondary {
   background-color: #3367bb !important;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icons .v-btn {
+  color: white !important;
+}
+
+.mobile-social-icons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
 .mobile-drawer :deep(a .v-list-item-title) {

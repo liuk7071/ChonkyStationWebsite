@@ -21,7 +21,7 @@
 
         <div class="github d-flex justify-center align-center">
           <a href="https://github.com/liuk7071/ChonkyStation3">
-            <i class="fa fa-github fa-2x"></i>
+            <i class="fab fa-github fa-xl"></i>
           </a>
         </div>
 
