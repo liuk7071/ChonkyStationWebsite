@@ -2,17 +2,31 @@
   <section id="links">
     <main>
       <v-container>
-        <v-row>
-          <v-col cols="12" class="animated fadeInUp banner">
+        <v-row align="center">
+          <v-col cols="12">
+            <h1 class="text-center text-md-h2 text-h3 mb-2">
+              Support ChonkyStation3
+            </h1>
+            <p
+              class="text-caption ff-body font-italic text-center mb-3 supportText"
+            >
+              Help us continue developing ChonkyStation3 by supporting the
+              project
+            </p>
+          </v-col>
+          <v-col cols="12" md="5" class="animated fadeInUp banner">
             <div>
-              <v-tooltip text="Support ChonkyStation3's development">
+              <v-tooltip
+                text="Support ChonkyStation3's development"
+                location="top"
+              >
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
                     src="/src/assets/img/support.png"
                     alt="Banner"
-                    height="240px"
-                    width="240px"
+                    height="300px"
+                    width="300px"
                     style="
                       filter: drop-shadow(0 0 2px #00ccff) brightness(0)
                         saturate(50%) invert(1) sepia(1) hue-rotate(180deg);
@@ -22,12 +36,7 @@
               </v-tooltip>
             </div>
           </v-col>
-          <v-col cols="12" class="animated fadeInUp supportText">
-            <h2 class="text-center">Support ChonkyStation3</h2>
-            <p class="text-caption ff-body font-italic text-center mb-3">
-              Help us continue developing ChonkyStation3 by supporting the
-              project
-            </p>
+          <v-col cols="12" md="7" class="animated fadeInUp supportText">
             <p>
               ChonkyStation3 is an open-source project that relies on community
               support to continue development. Your contributions help us
