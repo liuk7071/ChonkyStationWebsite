@@ -1,14 +1,16 @@
 <template>
   <section id="builds">
     <main>
-      <div class="d-flex flex-column justify-end align-center">
+      <div
+        class="d-flex flex-column justify-center align-center animated-section-header"
+      >
         <h1
-          class="text-h2 animated"
-          style="transform: translate3d(0, -15vh, 0); margin-bottom: 10vh"
+          class="text-h2 animated slideInUp"
+          style="animation-delay: 0.2s; margin-bottom: 2vh"
         >
           Latest development builds
         </h1>
-        <p style="transform: translate3d(0, -20vh, 0)">
+        <p class="animated slideInUp" style="animation-delay: 0.4s">
           No stable releases are available at the moment.
         </p>
       </div>
