@@ -43,6 +43,13 @@
         <VBtn icon href="https://discord.gg/YU2yjP5jvS" target="_blank">
           <i class="fab fa-discord fa-lg"></i>
         </VBtn>
+        <VBtn
+          icon
+          href="https://github.com/liuk7071/ChonkyStation3"
+          target="_blank"
+        >
+          <i class="fab fa-github fa-lg"></i>
+        </VBtn>
       </div>
     </VAppBar>
     <VNavigationDrawer
@@ -92,6 +99,14 @@
           size="large"
         >
           <i class="fab fa-discord fa-2x" style="color: #5865f2"></i>
+        </VBtn>
+        <VBtn
+          icon
+          href="https://github.com/liuk7071/ChonkyStation3"
+          target="_blank"
+          size="large"
+        >
+          <i class="fab fa-github fa-2x" style="color: #000000"></i>
         </VBtn>
       </div>
     </VNavigationDrawer>
