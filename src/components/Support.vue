@@ -14,7 +14,7 @@
               project
             </p>
           </v-col>
-          <v-col cols="12" md="5" class="animated fadeInUp banner">
+          <v-col cols="12" md="5" class="animated fadeInUp banner" order-md="2">
             <div>
               <v-tooltip
                 text="Support ChonkyStation3's development"
@@ -35,20 +35,9 @@
                 </template>
               </v-tooltip>
             </div>
-          </v-col>
-          <v-col cols="12" md="7" class="animated fadeInUp supportText">
-            <p>
-              ChonkyStation3 is an open-source project that relies on community
-              support to continue development. Your contributions help us
-              dedicate more time to improving compatibility, performance, and
-              adding new features. <br />
-              Every contribution, no matter how small, makes a difference and
-              helps us keep this project alive. Thank you for your support!
-            </p>
-
             <div class="support-links mt-4">
               <v-row>
-                <v-col cols="12" sm="6" class="text-center">
+                <v-col cols="12" lg="6" class="text-center">
                   <v-btn
                     href="https://patreon.com/ChonkyStation3"
                     target="_blank"
@@ -56,11 +45,12 @@
                     size="large"
                     prepend-icon="mdi-patreon"
                     class="ma-2"
+                    block
                   >
                     Support on Patreon
                   </v-btn>
                 </v-col>
-                <v-col cols="12" sm="6" class="text-center">
+                <v-col cols="12" lg="6" class="text-center">
                   <v-btn
                     href="https://ko-fi.com/ChonkyStation3"
                     target="_blank"
@@ -68,14 +58,30 @@
                     size="large"
                     prepend-icon="mdi-coffee"
                     class="ma-2"
+                    block
                   >
                     Buy us a Coffee
                   </v-btn>
                 </v-col>
               </v-row>
             </div>
+          </v-col>
+          <v-col
+            cols="12"
+            md="7"
+            class="animated fadeInUp supportText"
+            order-md="1"
+          >
+            <p class="text-justify">
+              ChonkyStation3 is an open-source project that relies on community
+              support to continue development. <br />Your contributions help us
+              dedicate more time to improving compatibility, performance, and
+              adding new features. <br />
+              Every contribution, no matter how small, makes a difference and
+              helps us keep this project alive. Thank you for your support!
+            </p>
 
-            <p class="mt-4 text-center">
+            <p class="mt-4">
               ChonkyStation3 is and forever will be free and open-source,
               meaning that no release will ever be hidden behind a paywall.
             </p>
@@ -90,6 +96,8 @@
 .banner {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .supportText {
