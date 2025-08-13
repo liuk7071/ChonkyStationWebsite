@@ -23,7 +23,7 @@
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
-                    src="/src/assets/img/support.png"
+                    :src="supportImg"
                     alt="Banner"
                     height="300px"
                     width="300px"
@@ -91,7 +91,9 @@
     </main>
   </section>
 </template>
-
+<script setup>
+import supportImg from "@/assets/img/support.png";
+</script>
 <style scoped>
 .banner {
   display: flex;

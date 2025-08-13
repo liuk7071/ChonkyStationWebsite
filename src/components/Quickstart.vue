@@ -17,7 +17,7 @@
                     v-bind="props"
                   >
                     <v-img
-                      src="/src/assets/img/usage.png"
+                      :src="quickstartImg"
                       alt="Banner"
                       class="img-zoom"
                       height="180px"
@@ -102,7 +102,9 @@
     </main>
   </section>
 </template>
-
+<script setup>
+import quickstartImg from "@/assets/img/usage.png";
+</script>
 <style scoped>
 .banner {
   display: flex;
