@@ -76,19 +76,21 @@
         </div>
       </div>
 
-      <div class="content d-flex justify-center align-center">
-        <p v-if="variant === 'download'" class="moveUp">
+      <div
+        class="d-flex justify-center align-center slideInUp"
+        style="animation-delay: 0.2s; margin-bottom: 2vh"
+      >
+        <p v-if="variant === 'download'">A PlayStation 3 Emulator</p>
+        <p v-else class="moveDown" style="margin-bottom: 6vh">
           A PlayStation 3 Emulator
         </p>
-        <p v-else class="moveDown">A PlayStation 3 Emulator</p>
       </div>
       <div
         v-if="variant === 'download'"
-        class="content d-flex justify-center align-center"
+        class="d-flex justify-center align-center slideInUp"
+        style="animation-delay: 0.4s; margin-bottom: 6vh"
       >
-        <p class="animated fadeInUp platformText">
-          for Windows, Mac and Linux.
-        </p>
+        <p class="animated fadeInUp">for Windows, Mac and Linux.</p>
       </div>
     </main>
   </section>
