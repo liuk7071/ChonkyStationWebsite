@@ -6,7 +6,10 @@
           <!-- Left Column -->
           <v-col cols="12" class="animated fadeInUp banner">
             <div>
-              <v-tooltip text="Read the full instructions on Github">
+              <v-tooltip
+                text="Read the full instructions on Github"
+                location="top"
+              >
                 <template v-slot:activator="{ props }">
                   <a
                     href="https://github.com/liuk7071/ChonkyStation3/tree/master?tab=readme-ov-file#usage"
@@ -45,8 +48,9 @@
             <p>
               Run ChonkyStation3 once so it creates a “Filesystem” folder next
               to the executable. This holds the emulated PS3's virtual
-              devices—mainly dev_flash and dev_hdd0—where your game files will
-              go. Once the folder is ready, follow these steps to install games.
+              devices—mainly <code>dev_flash</code> and <code>dev_hdd0</code>,
+              where your game files will go. Once the folder is ready, follow
+              these steps to install games.
             </p>
             <h3 class="mt-2">Step 1 - Install the game files</h3>
             <p>
