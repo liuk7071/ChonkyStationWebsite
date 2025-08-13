@@ -43,13 +43,15 @@
         <VBtn icon href="https://discord.gg/YU2yjP5jvS" target="_blank">
           <i class="fab fa-discord fa-lg"></i>
         </VBtn>
-        <VBtn
-          icon
+        <github-button
           href="https://github.com/liuk7071/ChonkyStation3"
-          target="_blank"
+          data-color-scheme="no-preference: dark; light: light; dark: dark;"
+          data-icon="octicon-star"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star liuk7071/ChonkyStation3 on GitHub"
+          >Star</github-button
         >
-          <i class="fab fa-github fa-lg"></i>
-        </VBtn>
       </div>
     </VAppBar>
     <VNavigationDrawer
@@ -139,6 +141,7 @@
 .social-icons {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
 .social-icons .v-btn {
@@ -173,6 +176,7 @@
 }
 </style>
 <script>
+import GithubButton from "vue-github-button";
 export default {
   inject: ["vuetify"],
   data: () => ({
@@ -182,6 +186,9 @@ export default {
   props: {
     color: String,
     flat: Boolean,
+  },
+  components: {
+    GithubButton,
   },
   methods: {
     onResize() {
