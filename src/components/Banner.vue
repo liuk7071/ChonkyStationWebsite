@@ -206,7 +206,7 @@
 }
 
 .slide-text-leave-active {
-  animation: fadeOutRight 0.25s ease-in;
+  animation: fadeOutLRight 0.25s ease-in;
 }
 
 @media screen and (max-width: 850px) {
